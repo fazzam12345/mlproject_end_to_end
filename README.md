@@ -1,3 +1,3 @@
-## End-to-end Machine Learning Project
+## End-to-end Machine Learning Project with deployment
 
-This project is a simple example of how to use the [scikit-learn](https://scikit-learn.org/stable/) library to train a model and then use it to make predictions.
+This project is a simple end-to-end machine learning project that uses the [scikit-learn](https://scikit-learn.org/stable/) library to train a model on a dataset and then deploy it to a web service. The project includes a Dockerfile that can be used to build a Docker image for the project, and a Makefile that can be used to build and deploy the Docker image to a Docker container.
