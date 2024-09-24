@@ -1,6 +1,5 @@
 import sys
-import logging
-
+from src.logger import logging
 def error_message_detail(error, error_detail: sys.exc_info) -> str:
     '''
     This function will return the error message detail
@@ -17,9 +16,3 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
 
-if __name__ == '__main__':
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info(CustomException("Divide by zero error", error_detail=sys.exc_info()))
-        raise CustomException(str(e), sys.exc_info()) from e
